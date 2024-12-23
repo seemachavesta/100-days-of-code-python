@@ -1,0 +1,10 @@
+{
+    "Shopping": {
+        "status": "Completed",
+        "due": "Today"
+    },
+    "Cleaning": {
+        "status": "Completed",
+        "due": "Yesterday"
+    }
+}
