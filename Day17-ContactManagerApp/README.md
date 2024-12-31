@@ -1,4 +1,5 @@
 Contact Manager
+
 A simple Python-based contact management application that allows users to store, view, search, add, and delete contacts from a CSV file. The app provides basic contact management functionality and can be easily extended for additional features.
 
 Features
