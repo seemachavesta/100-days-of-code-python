@@ -1,0 +1,40 @@
+{
+    "Appetizers": {
+        "Garlic Bread": 6.5,
+        "Bruschetta": 7.0,
+        "Stuffed Mushrooms": 8.5,
+        "Mozzarella Sticks": 7.99,
+        "Spinach Dip": 6.99
+    },
+    "Main Course": {
+        "Classic Burger": 8.99,
+        "Margherita Pizza": 12.99,
+        "Fettuccine Alfredo": 13.5,
+        "Grilled Salmon": 16.99,
+        "Ribeye Steak": 22.5,
+        "Chicken Parmesan": 14.99,
+        "Vegetable Stir Fry": 11.99,
+        "Beef Tacos": 10.99
+    },
+    "Drinks": {
+        "Soda": 2.5,
+        "Iced Tea": 3.25,
+        "Lemonade": 3.5,
+        "Craft Beer": 6.0,
+        "Red Wine": 40.0,
+        "Espresso": 4.0,
+        "Smoothie": 5.5,
+        "Sparkling Water": 3.75,
+        "Water": 1.75
+    },
+    "Desserts": {
+        "Chocolate Cake": 6.5,
+        "Cheesecake": 7.0,
+        "Tiramisu": 8.5,
+        "Apple Pie": 5.99,
+        "Ice Cream Sundae": 6.99,
+        "Brownie with Ice Cream": 7.5,
+        "Fruit Tart": 8.0,
+        "Cannoli": 20.99
+    }
+}
