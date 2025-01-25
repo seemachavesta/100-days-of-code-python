@@ -1,0 +1,20 @@
+[
+    {
+        "task_name": "Clean Home",
+        "priority": "Medium",
+        "due_date": "1/1/2024",
+        "status": "Completed"
+    },
+    {
+        "task_name": "Buy Groceries",
+        "priority": "High",
+        "due_date": "1/2/2024",
+        "status": "Pending"
+    },
+    {
+        "task_name": "Submit Project",
+        "priority": "High",
+        "due_date": "1/2/2024",
+        "status": "Completed"
+    }
+]
