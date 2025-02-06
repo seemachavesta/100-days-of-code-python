@@ -1,0 +1,52 @@
+[
+    {
+        "question": "What is the capital of France?",
+        "options": ["a) Madrid", "b) Berlin", "c) Paris", "d) Rome"],
+        "answer": "c"
+    },
+    {
+        "question": "Which planet is known as the Red Planet?",
+        "options": ["a) Venus", "b) Mars", "c) Jupiter", "d) Saturn"],
+        "answer": "b"
+    },
+    {
+        "question": "Who wrote 'Hamlet'?",
+        "options": ["a) Charles Dickens", "b) William Shakespeare", "c) Mark Twain", "d) Jane Austen"],
+        "answer": "b"
+    },
+    {
+        "question": "Which gas do plants absorb from the atmosphere?",
+        "options": ["a) Oxygen", "b) Nitrogen", "c) Carbon Dioxide", "d) Hydrogen"],
+        "answer": "c"
+    },
+    {
+        "question": "What is the largest ocean on Earth?",
+        "options": ["a) Atlantic Ocean", "b) Indian Ocean", "c) Arctic Ocean", "d) Pacific Ocean"],
+        "answer": "d"
+    },
+    {
+        "question": "Which element has the chemical symbol 'O'?",
+        "options": ["a) Oxygen", "b) Gold", "c) Osmium", "d) Oganesson"],
+        "answer": "a"
+    },
+    {
+        "question": "How many continents are there on Earth?",
+        "options": ["a) 5", "b) 6", "c) 7", "d) 8"],
+        "answer": "c"
+    },
+    {
+        "question": "Who painted the Mona Lisa?",
+        "options": ["a) Vincent van Gogh", "b) Pablo Picasso", "c) Leonardo da Vinci", "d) Michelangelo"],
+        "answer": "c"
+    },
+    {
+        "question": "What is the smallest prime number?",
+        "options": ["a) 0", "b) 1", "c) 2", "d) 3"],
+        "answer": "c"
+    },
+    {
+        "question": "Which country is famous for the Great Wall?",
+        "options": ["a) Japan", "b) China", "c) India", "d) Russia"],
+        "answer": "b"
+    }
+]
