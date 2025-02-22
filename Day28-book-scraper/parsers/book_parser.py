@@ -49,7 +49,7 @@ class BookParser:
         if star_rating_tag is None:
             return "No Rating"  # Handle missing ratings gracefully
     
-        classes = star_rating_tag.attrs.get('class', [])  # Use `.get()` to avoid KeyError
+        classes = star_rating_tag.attrs.get('class', []) 
         rating_classes = [r for r in classes if r != 'star-rating']
         rating = BookParser.RATING.get(rating_classes[0], 'No Rating')
         return rating
