@@ -1,0 +1,26 @@
+<!-- templates/layout.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>School Management System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>School Management System</h1>
+        <nav>
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('add_teacher') }}">Add Teacher</a>
+            <a href="{{ url_for('list_teachers') }}">View Teachers</a>
+            <a href="{{ url_for('add_student') }}">Add Student</a>
+            <a href="{{ url_for('list_students') }}">View Students</a>
+            <a href="{{ url_for('assign_teacher') }}">Assign Teacher</a>
+            <a href="{{ url_for('enroll_student') }}">Enroll Student</a>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>

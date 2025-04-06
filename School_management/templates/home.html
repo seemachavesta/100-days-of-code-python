@@ -1,0 +1,29 @@
+<!-- templates/home.html -->
+{% extends "layout.html" %}
+{% block content %}
+<div class="dashboard">
+    <h2>Welcome to the School Management Dashboard</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Total Teachers</h3>
+            <p>{{ teacher_count }}</p>
+        </div>
+        <div class="card">
+            <h3>Total Students</h3>
+            <p>{{ student_count }}</p>
+        </div>
+        <div class="card">
+            <h3>Total Classes</h3>
+            <p>{{ class_count }}</p>
+        </div>
+    </div>
+    <div class="actions">
+        <a href="{{ url_for('add_teacher') }}">Add Teacher</a>
+        <a href="{{ url_for('list_teachers') }}">View Teachers</a>
+        <a href="{{ url_for('add_student') }}">Add Student</a>
+        <a href="{{ url_for('list_students') }}">View Students</a>
+        <a href="{{ url_for('assign_teacher') }}">Assign Teacher</a>
+        <a href="{{ url_for('enroll_student') }}">Enroll Student</a>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block content %}
+<h2>Enroll Student in Class</h2>
+<form method="post">
+    <input type="text" name="student_name" placeholder="Student Name" required>
+    <input type="text" name="class_name" placeholder="Class Name" required>
+    <button type="submit">Enroll</button>
+</form>
+{% endblock %}

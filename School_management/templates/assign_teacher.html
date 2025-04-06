@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block content %}
+<h2>Assign Teacher to Class</h2>
+<form method="post">
+    <input type="text" name="teacher_name" placeholder="Teacher Name" required>
+    <input type="text" name="class_name" placeholder="Class Name" required>
+    <button type="submit">Assign</button>
+</form>
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block content %}
+<h2>All Students</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Grade</th>
+            <th>Enrolled Class</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for student in students %}
+        <tr>
+            <td>{{ student.name }}</td>
+            <td>{{ student.email }}</td>
+            <td>{{ student.grade }}</td>
+            <td>{{ student.enrolled_class or "—" }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

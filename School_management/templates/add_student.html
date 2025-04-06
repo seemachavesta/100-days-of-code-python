@@ -1,0 +1,10 @@
+ {% extends "layout.html" %}
+{% block content %}
+<h2>Add Student</h2>
+<form method="post">
+    <input type="text" name="name" placeholder="Name" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="text" name="grade" placeholder="Grade" required>
+    <button type="submit">Add Student</button>
+</form>
+{% endblock %}
