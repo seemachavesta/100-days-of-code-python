@@ -1,3 +1,20 @@
 __pycache__/
 .pytest_cache/
 
+# Ignore Python cache
+__pycache__/
+*.py[cod]
+
+# Ignore virtual environments
+venv/
+env/
+
+# Ignore IDE/editor files
+.idea/
+.vscode/
+
+# Ignore system files
+.DS_Store
+
+# Ignore Pipenv lock file if unnecessary
+Pipfile.lock
