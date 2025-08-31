@@ -1,0 +1,26 @@
+{% extends "enrollment/layout.html" %}
+
+{% block title %}{{ student.student_name }}{% endblock %}
+
+{% block content %}
+<div class="container">
+  <h1>{{ student.student_name }}</h1>
+  <p class="subtitle">
+    Email: <a href="mailto:{{ student.email }}">{{ student.email }}</a><br>
+    School: <a href="{% url 'school-detail' student.school.slug %}">{{ student.school.name }}</a>
+  </p>
+
+  <div class="section">
+    <h3>Enrolled Courses ({{ student.courses.count }})</h3>
+    <ul class="list">
+      {% for c in student.courses.all %}
+        <li><a href="{% url 'course_detail' c.slug %}">{{ c.name }}</a></li>
+      {% empty %}
+        <li class="muted">Not enrolled in any courses.</li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <a class="btn" href="{% url 'students-list' %}">← Back to Students</a>
+</div>
+{% endblock %}

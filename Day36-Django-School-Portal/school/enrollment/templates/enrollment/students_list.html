@@ -1,0 +1,47 @@
+{% extends "enrollment/layout.html" %}
+
+{% block title %}Courses{% endblock %}
+
+{% block content %}
+<div class="container">
+  <h1>Students</h1>
+  <p class="subtitle">Overview of all Students with their school and course counts.</p>
+
+  <div class="section">
+    {% if students %}
+      <table class="school-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>School</th>
+            <th>Course</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for student in students %}
+            <tr>
+             
+              <td><a href="{% url 'student_detail' student.slug %}">{{ student.student_name }}</a></td>
+              <td>{{ student.school.name }}</td>
+              <td>
+                
+                {% for course in student.courses.all %}
+                    {{ course.name }}{% if not forloop.last %}, {% endif %}
+                {% empty %}
+                 <span class="muted">No Courses</span>
+                {% endfor %}
+            </td>
+              
+            </tr>
+            
+          {% endfor %}
+        </tbody>
+      </table>
+    {% else %}
+      <p class="muted">No students found.</p>
+    {% endif %}
+  </div>
+
+  <a class="btn" href="{% url 'dashboard' %}">← Back to Dashboard</a>
+</div>
+{% endblock %}

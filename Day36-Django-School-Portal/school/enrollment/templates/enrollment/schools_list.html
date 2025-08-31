@@ -1,0 +1,39 @@
+{% extends "enrollment/layout.html" %}
+
+{% block title %}Schools{% endblock %}
+
+{% block content %}
+<div class="container">
+  <h1>Schools</h1>
+  <p class="subtitle">Overview of all schools with course and student counts.</p>
+
+  <div class="section">
+    {% if schools %}
+      <table style="width:100%; border-collapse: collapse;">
+        <thead>
+          <tr style="text-align:left; border-bottom: 1px solid #e5e7eb;">
+            <th style="padding:10px;">Name</th>
+            <th style="padding:10px;">Courses</th>
+            <th style="padding:10px;">Students</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for school in schools %}
+            <tr style="border-bottom: 1px solid #f0f0f0;">
+              <td style="padding:10px;">
+                <a href="{% url 'school-detail' school.slug %}">{{ school.name }}</a>
+              </td>
+              <td style="padding:10px;">{{ school.courses.count }}</td>
+              <td style="padding:10px;">{{ school.students.count }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    {% else %}
+      <p class="muted">No schools found.</p>
+    {% endif %}
+  </div>
+
+  <a class="btn" href="{% url 'dashboard' %}">← Back to Dashboard</a>
+</div>
+{% endblock %}

@@ -1,0 +1,28 @@
+
+{% extends "enrollment/layout.html" %}
+
+{% block title %}Home Page{% endblock %}
+
+{% block content %}
+<h1>Dashboard</h1>
+
+<div class="cards">
+  <div class="card">
+    <h2>Schools</h2>
+    <p>{{ school_count }}</p>
+    <a href="{% url 'schools-list' %}">View All</a>
+  </div>
+
+  <div class="card">
+    <h2>Courses</h2>
+    <p>{{ course_count }}</p>
+    <a href="{% url 'courses-list' %}">View All</a>
+  </div>
+
+  <div class="card">
+    <h2>Students</h2>
+    <p>{{ student_count }}</p>
+    <a href="{% url 'students-list' %}">View All</a>
+  </div>
+</div>
+{% endblock %}
